@@ -39,3 +39,25 @@ const myFunc = function() {
 }
 
 console.log(typeof heros, typeof userData, typeof myFunc)
+
+
+// -------------------------- Memory Management ---------------------------
+
+// Stack (Primitive) , Heap (Non-Primitive)
+
+let myYoutubeName = "T-Series"
+let anotherName = myYoutubeName
+anotherName = "T-series Marathi"
+console.log(anotherName);
+
+let userOne = {
+    email : "User1@gmail.com",
+    upi : "user1@ybl"
+}
+
+let userTwo = userOne
+
+console.log(userOne, userTwo)
+
+userTwo.email = "User2@gmail.com"
+console.log(userOne, userTwo)
